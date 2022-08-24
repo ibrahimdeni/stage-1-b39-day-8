@@ -47,7 +47,7 @@
 
     <section>
 
-        <h2 class="my-4 fw-bolder text-center">{{dataDetail.project}}</h2>
+        <h2 class="my-4 fw-bolder text-center">{{data.project}}</h2>
         <div class="d-flex p-3" style="height: 500px;">
             <div class="w-75">
                 <img class="w-100 px-5 pt-2" style="object-fit: cover; height: 100%;" src="/assets/images/catto.png" alt="">
@@ -57,11 +57,11 @@
                     <p class="fw-semibold fs-5">Duration</p>
                     <div class="col mb-3 text-secondary">
                         <label class="fw-semibold" for="kalender"><img class="me-2" src="/assets/images/kalender.png"
-                                style="width: 40px;" alt="">{{dataDetail.sDate}} - {{dataDetail.eDate}}</label>
+                                style="width: 40px;" alt="">{{data.sDate}} - {{data.eDate}}</label>
                     </div>
                     <div class="col text-secondary">
                         <label class="fw-semibold" for="kalender"><img class="me-2" src="/assets/images/jam.png"
-                                style="width: 40px;" alt="">{{dataDetail.duration}}</label>
+                                style="width: 40px;" alt="">{{data.duration}}</label>
                     </div>
                 </div>
                 <div class="app">
@@ -97,7 +97,7 @@
         <section>
         <div class="mx-5 mt-5 lorem">
             <p> 
-                {{dataDetail.Descr}}
+                {{data.Descr}}
             </p>
         </div>
     </section>

@@ -30,14 +30,18 @@ app.get('/project-detail/:index', function(request,response){
 
     let index = request.params.index
 
-    let dataDetail = dataProject[index]
-    // dataDetail= {
-    //     duration: getDistanceTime(new Date(isi.sDate), new Date(isi.eDate))
-    // }
+    let data = dataProject[index]
+    data = {
+        project: data.project,
+        sDate: data.sDate,
+        eDate: data.eDate,
+        duration: getDistanceTime (new Date(data.sDate), new Date(data.eDate)),
+        Descr: data.Descr
+        }
 
     // console.log(id);
 
-    response.render("project-detail", {dataDetail})
+    response.render("project-detail", {data})
 })
 
 //untuk menampilkan halaman
